@@ -4,10 +4,14 @@ using namespace std;
 
 int main() {
 
-    int n, i=1, cd=0;
+    int n, i=0, cd=0;
     bool primo;
 
     cin>>n;
+
+    if (n < 0){
+        n = abs(n); // n = | n |
+    }
 
     while (i <= n) {
         if (n % i == 0) {
