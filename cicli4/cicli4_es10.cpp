@@ -15,12 +15,15 @@ int main()
     {   
         do
         {
+            cout<<"Inserisci numero pari: "<<endl;
             cin>>val;
         } while (val%2!=0);
-        if (val==100 && c==0)
+        if (val==100)
         {
-            vuota = true;
-            cout<<"SEQUENZA VUOTA."<<endl;
+            if (c==0){
+                vuota = true;
+                cout<<"SEQUENZA VUOTA."<<endl;
+            }
             break;
         }
         if (val%4==0)
