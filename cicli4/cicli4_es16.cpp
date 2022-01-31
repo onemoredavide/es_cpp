@@ -3,10 +3,6 @@
 using namespace std;
 
 int main(){
-	/*
-	Data una serie di numeri costituiti da “1” e “2” (effettuare il controllo) e terminante con “0” dire quanti sono
-	gli “1” e quanti sono i “2”
-	*/
 	int val, c1=0, c2=0;
 	do {
 		cin>>val;
