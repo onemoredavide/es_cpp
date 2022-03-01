@@ -20,16 +20,14 @@ int input(string output) {
 int main() {
     srand(time(NULL));
     int n=input("Inserisci la numerosita' del ciclo: "), i=0, x;
-    bool soloPari=true;
     while(i<n) {
         x=rand()%2011 - 10;
-        cout<<x<<endl;
         if (!controlla(x)){
-            soloPari=false;
+            cout<<"Sono stati trovai numeri negativi. "<<endl;
             break;
         }
         i++;
     }
-    cout<<soloPari;
+    cout<<"Numeri generati: "<<i<<endl;
     return 0;
 }
